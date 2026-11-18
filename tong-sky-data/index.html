@@ -7,18 +7,31 @@
 <title>서비스 종료 안내</title>
 <style>
   body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f6f9;font-family:-apple-system,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;color:#1f2937}
-  .card{background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,.08);padding:48px 40px;text-align:center;max-width:420px;margin:24px}
+  .wrap{display:flex;gap:20px;align-items:stretch;margin:24px;flex-wrap:wrap;justify-content:center}
+  .card{background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(0,0,0,.08);padding:48px 40px;text-align:center;max-width:420px}
   h1{font-size:22px;margin:0 0 12px}
-  p{font-size:15px;color:#4b5563;margin:0 0 28px}
-  a{display:inline-block;background:#03c75a;color:#fff;text-decoration:none;font-weight:600;padding:14px 32px;border-radius:10px}
-  a:hover{background:#02b350}
+  p{font-size:15px;color:#4b5563;margin:0 0 28px;line-height:1.6}
+  .blog{display:inline-block;background:#03c75a;color:#fff;text-decoration:none;font-weight:600;padding:14px 32px;border-radius:10px}
+  .blog:hover{background:#02b350}
+  .links{display:flex;flex-direction:column;gap:12px;justify-content:center;min-width:200px}
+  .links a{display:block;background:#fff;color:#1f2937;text-decoration:none;font-weight:600;padding:18px 22px;border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,.08);border-left:5px solid #2563eb}
+  .links a:hover{background:#eef2ff}
+  .links a span{float:right;color:#9ca3af}
+  @media (max-width:700px){.links{width:100%;max-width:420px}}
 </style>
 </head>
 <body>
-<div class="card">
-  <h1>통SKY 서비스가 종료되었습니다.</h1>
-  <p>그동안 이용해 주셔서 감사합니다.<br><br><b>매주 월요일</b> 유럽노선 게시가 될 예정입니다.</p>
-  <a href="https://blog.naver.com/PostList.naver?blogId=mkj2449&amp;from=postList&amp;categoryNo=12">블로그로 이동</a>
+<div class="wrap">
+  <div class="card">
+    <h1>통SKY 서비스가 종료되었습니다.</h1>
+    <p>그동안 이용해 주셔서 감사합니다.<br><br>대한항공 마일리지 유럽노선 추천일정은<br><b>매주 월요일 기준</b>으로 블로그에 게시됩니다.</p>
+    <a class="blog" href="https://blog.naver.com/PostList.naver?blogId=mkj2449&amp;from=postList&amp;categoryNo=12">블로그로 이동</a>
+  </div>
+  <div class="links">
+    <a href="https://korea-futures-cloudflare.pages.dev/">롱숏레이더 <span>›</span></a>
+    <a href="https://food.tongapp.co.kr/">통식도락여행 <span>›</span></a>
+    <a href="https://tongapp.co.kr/">통홈페이지 <span>›</span></a>
+  </div>
 </div>
 </body>
 </html>
